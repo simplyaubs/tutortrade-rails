@@ -1,0 +1,56 @@
+<style media="screen" type="text/css">
+	body {
+  width: 760px;
+  margin: 20px auto;
+  background-color: white;
+  border: 3px #ccc solid;
+  padding: 30px;
+  font-family: sans-serif;
+  font-size: 16pt;
+}
+	h1 {
+		background-color: black;
+		color: white	;
+	}
+</style>
+
+<h1>
+	Tutor: 
+	<%= @user.first_name %> 
+	<%= @user.last_name %>
+</h1>
+
+<img class="img-circle" src="/images/<%= @user.tutor_pic %>">
+
+<br>
+<br>
+
+<table class="table">
+	<tr>
+		<th>
+			Major: 
+			<%= @user.major %>
+		</th>
+	</tr>
+	<tr>
+		<th>
+			Year: 
+			<%= @user.year %>
+		</th>
+	</tr>
+	<tr>
+		<th>
+			Tutors: 
+			<%= @user.subject %>
+		</th>
+	</tr>
+	<tr>
+		<th> 
+			Bio: 
+			<%= @user.bio %>
+		</th>
+	</tr>
+</table>
+
+<br>
+<br>
